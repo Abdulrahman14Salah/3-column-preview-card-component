@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Open+Sans:wght@400;700&display=swap");
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Font-size: 15px;
+  --border-size: 5px;
+  --paragraph-color: hsla(0, 0%, 100%, 0.75);
+  --background-heading-buttons: hsl(0, 0%, 95%);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: var(--Font-size);
+  margin: 50px 25px;
+  font-family: "Lexend Deca", sans-serif;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  justify-content: center;
+}
+.container .box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 40px;
+  color: white;
+  height: 400px;
+}
+.container .box > h1 {
+  color: var(--background-heading-buttons);
+  text-transform: uppercase;
+}
+.container .box > p {
+  color: var(--paragraph-color);
+}
+.container .box > button {
+  background-color: var(--background-heading-buttons);
+  padding: 15px 25px;
+  border: 1px solid white;
+  border-radius: 50px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.container .box1 {
+  background-color: var(--Bright-orange);
+}
+.container .box1 > button {
+  color: var(--Bright-orange);
+}
+.container .box2 {
+  background-color: var(--Dark-cyan);
+}
+.container .box2 > button {
+  color: var(--Dark-cyan);
+}
+.container .box3 {
+  background-color: var(--Very-dark-cyan);
+}
+.container .box3 > button {
+  color: var(--Very-dark-cyan);
+}
+@media (max-width: 967px) {
+  .container {
+    grid-template-columns: 300px;
+    justify-content: center;
+  }
+  .container .box1 {
+    border-radius: var(--border-size) var(--border-size) 0 0;
+  }
+  .container .box3 {
+    border-radius: 0 0 var(--border-size) var(--border-size);
+  }
+}
+.attribution {
+  font-size: var(--Font-size);
+  text-align: center;
+  margin-top: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
