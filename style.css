@@ -35,7 +35,7 @@ body {
   justify-content: space-around;
   padding: 40px;
   color: white;
-  height: 400px;
+  height: 480px;
 }
 .container .box > h1 {
   color: var(--background-heading-buttons);
@@ -51,6 +51,12 @@ body {
   border-radius: 50px;
   text-transform: capitalize;
   font-weight: bold;
+  cursor: pointer;
+  width: 10rem;
+}
+.container .box > button:hover {
+  background-color: inherit;
+  color: white;
 }
 .container .box1 {
   background-color: var(--Bright-orange);
