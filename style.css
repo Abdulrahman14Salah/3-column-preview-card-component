@@ -15,13 +15,16 @@
 }
 body {
   font-size: var(--Font-size);
-  margin: 50px 25px;
+  min-height: 100vh;
   font-family: "Lexend Deca", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .container {
   display: grid;
   grid-template-columns: repeat(3, 300px);
-  justify-content: center;
+  margin: auto;
 }
 .container .box {
   display: flex;
