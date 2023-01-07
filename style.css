@@ -47,12 +47,13 @@ body {
 .container .box > button {
   background-color: var(--background-heading-buttons);
   padding: 15px 25px;
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 50px;
   text-transform: capitalize;
   font-weight: bold;
   cursor: pointer;
   width: 10rem;
+  transition: .3s all ease-in-out;
 }
 .container .box > button:hover {
   background-color: inherit;
